@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Used Furniture E-commerce</title>
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Hero Section */
+    .hero-section {
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.4); /* Dark overlay for text visibility */
+    }
+
+    .content-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+      position: relative;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+    }
+
+    .hero-content {
+      text-align: center;
+      max-width: 600px;
+    }
+
+    .hero-heading {
+      font-size: 3rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: #f1c40f; /* Bright yellow accent for the headline */
+    }
+
+    .hero-description {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      color: #f1f1f1;
+    }
+
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .cta-btn {
+      padding: 15px 30px;
+      font-size: 1.1rem;
+      text-decoration: none;
+      border-radius: 8px;
+      text-transform: uppercase;
+      font-weight: bold;
+      transition: all 0.3s ease;
+    }
+
+    .primary {
+      background-color: #f39c12; /* Orange for the primary button */
+      color: #fff;
+    }
+
+    .primary:hover {
+      background-color: #e67e22;
+    }
+
+    .secondary {
+      background-color: transparent;
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .secondary:hover {
+      background-color: #fff;
+      color: #f39c12;
+    }
+
+    /* Categories Section */
+    .categories-section {
+      background-color: #f2f2f2;
+      padding: 60px 20px;
+    }
+
+    .categories-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .categories-title {
+      font-size: 2.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50; /* Darker shade for category title */
+    }
+
+    .categories-description {
+      font-size: 1.1rem;
+      color: #7f8c8d;
+      margin-bottom: 40px;
+    }
+
+    .category-cards {
+      display: block;
+      max width: 100%;
+      height: auto;
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .category-card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .category-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .category-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 20px;
+    }
+
+    .category-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 10px;
+      color: #2c3e50;
+    }
+
+    .category-card a {
+      padding: 10px 20px;
+      background-color: #f39c12; /* Yellow-orange for the category button */
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .category-card a:hover {
+      background-color: #e67e22;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <section class="hero-section bg-cover bg-center h-screen" style="background-image: url('img/hero-bg.jpg');">
+    <!-- Overlay for text visibility -->
+    <div class="hero-overlay"></div>
+
+    <!-- Centered Content -->
+    <div class="content-container">
+      <!-- Hero Content -->
+      <div class="hero-content">
+        <h1 class="hero-heading">
+          Revamp Your Home with Stylish & Affordable Furniture
+        </h1>
+        <p class="hero-description">
+          Explore our exclusive collection of expertly refurbished furniture that fits your style and budget.
+        </p>
+        <div class="cta-buttons">
+          <a href="furniture.html" class="cta-btn primary">Shop Now</a>
+          <a href="sell.html" class="cta-btn secondary">Sell Your Furniture</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Below Hero Section: Categories Section -->
+  <section class="categories-section">
+    <div class="categories-container">
+      <h2 class="categories-title">Explore Our Categories</h2>
+      <p class="categories-description">Find the perfect piece to fit your home and style from our wide range of refurbished furniture.</p>
+      <div class="category-cards">
+        <div class="category-card">
+          <img src="/Users/DAKSHAYANI/Desktop\category-sofas.png" alt="Sofas">
+          <h3 class="category-title">Sofas</h3>
+          <a href="furniture.html" class="cta-btn primary">Shop Now</a>
+        </div>
+        <div class="category-card">
+          <img src="/Users/DAKSHAYANI/Desktop\category-tables.png" alt="Tables">
+          <h3 class="category-title">Tables</h3>
+          <a href="furniture.html" class="cta-btn primary">Shop Now</a>
+        </div>
+        <div class="category-card">
+          <img src="/Users/DAKSHAYANI/Desktop\category-chairs.png" alt="Chairs">
+          <h3 class="category-title">Chairs</h3>
+          <a href="furniture.html" class="cta-btn primary">Shop Now</a>
+        </div>
+        <div class="category-card">
+          <img src="/Users/DAKSHAYANI/Desktop\category-decor.png" alt="Decor">
+          <h3 class="category-title">Decor</h3>
+          <a href="furniture.html" class="cta-btn primary">Shop Now</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
